@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+*{
+  margin: 0px ;
+  padding: 0px;
+}
+/* css cho header */
+header{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  z-index: 999;
+  background-color: rgb(219, 219, 219);
+}
+.menu{
+  position: relative;
+}
+
+.menu .menu-logo{
+  width: 15%;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+.menu nav {
+  position: absolute;
+  top: 50px;
+  right: 400px;
+  margin: 0px;
+}
+
+.menu nav a{
+  text-decoration: none;
+  margin: 10px 30px;
+  color: black;
+  padding: 5px;
+}
+.menu input{
+  position: absolute;
+  right: 150px;
+  top: 47px;
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid rgb(160, 160, 160);
+  background-color: rgb(204, 202, 202);
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+}
+
+.menu i{
+  position: absolute;
+  right: 120px;
+  top: 55px;
+}
+
+.menu nav a:hover{
+  color: gray;
+  border-bottom: 2px solid gray;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+/* menu con */
+.menu li{
+  list-style-type: none;
+  display: inline-block;
+}
+.menu ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.menu ul .shop{
+  background-image: url('image/bx-chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.menu ul .shop:hover{
+  background-image: url('image/bx-chevron-up.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+.menu ul li ul {
+  display: none; 
+  position: absolute;
+  top: 30px;
+  background-color: rgb(224, 224, 224);
+  border: 1px double rgb(158, 158, 158);
+}
+.menu ul .shop:hover ul{
+  display: block;
+} 
+.menu ul li ul li{
+  padding: 10px;
+}
+/* body login*/
+.login i{
+  position: absolute;
+  right: 57px;
+  top: 45px;
+  border: 2px solid rgb(160, 160, 160);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.login p{
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 75px;
+    font-size: 12px;
+}
+.form{
+  position: relative;
+  top: 150px;
+  text-align: center;
+}
+/* css cho input */
+.form-input{
+  margin-top: 35px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width: 50%;
+  height: 50px;
+  padding: 0 20px;
+  transition: 0.25s ease;
+}
+.form-input:focus{
+  border-color: rgb(137, 137, 137);
+  outline: none;
+}
+.form-field{
+  position: relative;
+}
+.form-label{
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: 405px;
+  user-select: none;
+  color: rgb(202, 202, 202);
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label{
+  top: 36px;
+  left: 395px;
+  padding: 5px;
+  display: inline-block;
+  background-color: white;
+  color: rgb(137, 137, 137);
+}
+/* css cho nút đk */
+.form-button button{
+  margin: 35px 0px;
+  padding: 15px 20px;
+  width: 50%;
+  border: 1px solid rgb(137, 137, 137);
+  background-color: white;
+}
+.form-button button:hover {
+  background-color:rgb(137, 137, 137);
+  color: white;
+}
+/* footer */
+.footer-hotline p{ 
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.footer-in4 .item{
+  width: 23%;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 200px;
+}
+footer .in4 h4{
+  margin-left: 20px;
+  margin-bottom: 25px ;
+}
+footer .connect h4{
+  margin-bottom: 25px ;
+}
+footer .taikhoan h4{
+  margin-top: 30px;
+  margin-bottom: 46px ;
+}
+footer .in4 h4{
+  
+  margin-bottom: 25px ;
+}
+footer .tacgia{
+  border-top: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.sanpham-img{
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 100%;
+  overflow:hidden;
+}
+.sanpham-img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sanpham-img img:nth-of-type(2){
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+.sanpham .sanpham:hover .sanpham-img img:nth-of-type(2){
+  opacity: 1;
+}
+.taikhoan a{
+  text-decoration: none;
+  color: black;
+}
+.taikhoan a:hover{
+  text-decoration: none;
+  color: blue;
+}
